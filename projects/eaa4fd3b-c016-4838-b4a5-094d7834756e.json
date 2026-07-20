@@ -1,0 +1,14 @@
+{
+  "id":  "eaa4fd3b-c016-4838-b4a5-094d7834756e",
+  "name":  "%E6%B3%A2%E3%81%AE%E9%9F%B3",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///Users/happyhappylife0307/Documents/%E6%B3%A2%E3%81%AE%E9%9F%B3",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id":  "3ec85ca1-2e61-46fc-a8c6-524a29dd2054",
+  "name":  "testop",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///Users/happyhappylife0307/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/testop",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

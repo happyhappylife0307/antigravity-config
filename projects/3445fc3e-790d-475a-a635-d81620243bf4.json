@@ -1,0 +1,15 @@
+{
+  "id":  "3445fc3e-790d-475a-a635-d81620243bf4",
+  "name":  "2nd-Brain 4",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///Users/happyhappylife0307/Documents/Obsidian/2nd-Brain",
+          "defaultBranch":  "main",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}
