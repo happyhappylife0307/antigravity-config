@@ -1,0 +1,9 @@
+{
+  "test_only": true,
+  "audits": {
+    "machine": {"status": "pass", "evidence": "サンプル原稿の自動検査用"},
+    "style": {"status": "pass", "evidence": "サンプル原稿の自動検査用"},
+    "fact": {"status": "pass", "evidence": "架空商品であることを明記"},
+    "legal": {"status": "pass", "evidence": "効果保証と期限表現を不使用"}
+  }
+}

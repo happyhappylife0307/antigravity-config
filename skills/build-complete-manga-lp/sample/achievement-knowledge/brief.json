@@ -1,0 +1,16 @@
+{
+  "project_name": "夏の学びクエスト（架空サンプル）",
+  "product_type": "knowledge",
+  "goal": "conversion",
+  "sales_style": "achievement_journey",
+  "decision_maker_separate": true,
+  "facts": [
+    "1回10分の架空教材という設定",
+    "このサンプルは機能試験用で、実在の商品ではない"
+  ],
+  "claims_not_allowed": [
+    "成績向上の保証",
+    "根拠のない期間限定表現"
+  ],
+  "cta_url": "https://example.com/"
+}

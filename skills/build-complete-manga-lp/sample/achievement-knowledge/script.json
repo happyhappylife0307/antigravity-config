@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "架空教材サンプル",
+    "style_prompt": "明るく親しみやすいフルカラーの日本の広告漫画。表情が読みやすい。",
+    "canvas": {"width": 480, "panel_height": 300},
+    "demo": true,
+    "has_minors": true,
+    "strategy": {
+      "product_type": "knowledge",
+      "goal": "conversion",
+      "selection_mode": "manual",
+      "primary_style": "achievement_journey",
+      "primary_style_label": "成長実感型",
+      "decision_maker_separate": true,
+      "overlays": ["objection"],
+      "route": "成長実感型＋反論処理",
+      "required_beats": [
+        "hook", "problem", "peer_prompt", "decision_maker_pitch", "product_reveal",
+        "experience", "proof", "visible_success", "bright_future", "cta"
+      ],
+      "pages": 10,
+      "recommended_pages": [10, 20],
+      "minimum_proof_loops": 2,
+      "product_reveal_by": 0.5,
+      "next_action": "申し込む",
+      "hook_question": "主人公は夏休みの宿題と遊びを両立できるのか？",
+      "payoff_mirror": "冒頭の困り顔と同じ机で、最後は自分から教材を開く",
+      "achievement_ceiling": "架空教材の問題を一問、自力で解けたところまで",
+      "cta_basis": "架空サンプルのため期限や効果を訴求しない",
+      "user": "宿題に困っている小学生",
+      "decision_maker": "教材の申込を判断する保護者",
+      "peer": "主人公を誘う同級生",
+      "bright_future": "宿題を終え、友人と花火を楽しむ場面"
+    },
+    "marketing": {
+      "phase": "P0",
+      "funnel_stage": "販売",
+      "traffic_source": "保護者向けSNS投稿から商品説明ページへ流入",
+      "kpi": "CTAクリック率",
+      "target": {
+        "segment": "長時間の宿題に抵抗があり、遊ぶ時間も守りたい小学生とその保護者",
+        "situation": "夏休みの宿題が残り、親子ともに進め方を決められない",
+        "desired_progress": "短い区切りで一問を終え、遊びと宿題を両立する",
+        "user": "宿題に困っている小学生",
+        "decision_maker": "教材の申込を判断する保護者",
+        "payer": "教材費を支払う保護者",
+        "barrier": "続けられるか、子どもへ押しつけにならないか分からない"
+      },
+      "transformation": {
+        "before": "宿題を見るだけで手が止まり、親も声かけに迷っている",
+        "after_immediate": "保護者が教材の使い方と一回の体験を理解し、申込を判断できる",
+        "after_experience": "子どもが一問を自分で終え、友人との予定へ移れる",
+        "non_goal": "成績向上や短期間で全宿題が終わることは保証しない"
+      },
+      "desired_change": "保護者が教材の使い方を理解し、申込を判断できる",
+      "hypothesis": "困りごと、使用場面、小さな成功を順に示すと判断材料になる",
+      "evidence": {
+        "type": "勘",
+        "source": "架空サンプルの商品設定",
+        "date": "2026-08-04",
+        "finding": "一回10分と画面例だけを確認可能な訴求として使う"
+      },
+      "measurement": {
+        "event": "LP最終到達とCTAクリック",
+        "method": "テスト環境のイベントログ",
+        "timing": "公開後7日ごと",
+        "success_rule": "クリックがなければフックと商品体験場面を一要素ずつ修正する"
+      },
+      "route_decision": {
+        "presented": true,
+        "selected": "achievement_journey",
+        "reason": "利用者と支払者が別なので、子どもの挑戦と保護者の判断を同じ導線で描く",
+        "alternatives": [
+          {"style": "achievement_journey", "label": "成長実感型", "recommended": true},
+          {"style": "testimonial", "label": "体験談型", "recommended": false},
+          {"style": "desire", "label": "欲望回収型", "recommended": false}
+        ],
+        "confirmation": "auto_recommended"
+      },
+      "do_not": ["成績向上を保証しない", "根拠のない期限を作らない"],
+      "inspection_plan": ["machine", "style", "fact", "legal"]
+    },
+    "offer": {"deadline": "", "deadline_source": ""},
+    "legal_notes": [
+      "これは機能試験用の架空商品です。",
+      "効果や感じ方には個人差があります。"
+    ],
+    "rights": {
+      "authorized_names": ["架空教材サンプル"],
+      "third_party_names": [],
+      "third_party_logos": [],
+      "third_party_characters": [],
+      "reviewed": true,
+      "review_evidence": "本文・吹き出し・作画指示を確認し、架空の商品名以外の固有名称と第三者標章がない"
+    }
+  },
+  "characters": {
+    "user": {
+      "name": "ユウ",
+      "prompt": "小学生。短い黒髪、黄色いTシャツ、青い短パン。元気だが宿題には困っている。",
+      "ref": "assets/characters/user.png",
+      "expression_ref": "assets/characters/user_expressions.png"
+    },
+    "peer": {
+      "name": "ミナ",
+      "prompt": "同級生。黒いポニーテール、水色のTシャツ。明るく背中を押す。",
+      "ref": "assets/characters/peer.png",
+      "expression_ref": "assets/characters/peer_expressions.png"
+    },
+    "decision_maker": {
+      "name": "保護者",
+      "prompt": "ユウの保護者。茶色の短髪、緑のトップス。穏やかだが購入判断は慎重。",
+      "ref": "assets/characters/decision_maker.png",
+      "expression_ref": "assets/characters/decision_maker_expressions.png"
+    }
+  },
+  "proof_loops": [
+    {"barrier": "長い勉強は続かない", "mechanism": "1回10分に区切る", "scene": "時計を置いて一問に挑戦", "result": "10分で一問を終える"},
+    {"barrier": "割り算で止まる", "mechanism": "図で分けて考える", "scene": "丸を箱へ分ける画面を見る", "result": "自分で答えを選ぶ"}
+  ],
+  "panels": [
+    {"n": 1, "page": 1, "section": "hook", "characters": ["user"], "art": "夏空の下、宿題の束を見て青ざめるユウ。遊ぶ友人の声が窓から聞こえる。", "image": "assets/panels/p001.png", "bubbles": [{"style": "shout", "text": "夏休み、勉強ばかり？", "x": 0.73, "y": 0.24, "max_w": 0.36, "tail": [0.55, 0.55], "font_size": 0.07}]},
+    {"n": 2, "page": 2, "section": "problem", "characters": ["user"], "art": "机の上に残った宿題。ユウが鉛筆を置いて困っている。", "image": "assets/panels/p002.png", "bubbles": [{"style": "speech", "text": "宿題で遊べない…", "x": 0.74, "y": 0.25, "max_w": 0.34, "tail": [0.54, 0.55], "font_size": 0.07}]},
+    {"n": 3, "page": 3, "section": "peer_prompt", "characters": ["user", "peer"], "art": "ミナが玄関から顔を出し、ユウへ楽しそうに提案する。", "image": "assets/panels/p003.png", "bubbles": [{"style": "speech", "text": "楽しく挑戦すれば？", "x": 0.72, "y": 0.24, "max_w": 0.34, "tail": [0.54, 0.56], "font_size": 0.07}]},
+    {"n": 4, "page": 4, "section": "decision_maker_pitch", "characters": ["user", "decision_maker"], "art": "ユウが保護者へタブレットの教材説明を見せる。保護者は内容を確認している。", "image": "assets/panels/p004.png", "bubbles": [{"style": "speech", "text": "これなら続けられる？", "x": 0.73, "y": 0.24, "max_w": 0.35, "tail": [0.54, 0.58], "font_size": 0.07}]},
+    {"n": 5, "page": 5, "section": "product_reveal", "characters": ["user", "decision_maker"], "art": "架空教材の汎用的なタブレット画面と10分タイマーを大きく見せる。名称やロゴは描かない。", "image": "assets/panels/p005.png", "bubbles": [{"style": "narration", "text": "一日10分の学習教材", "x": 0.70, "y": 0.18, "max_w": 0.42, "font_size": 0.065}]},
+    {"n": 6, "page": 6, "section": "experience", "characters": ["user"], "art": "ユウがタブレットで問題を選び、楽しそうに一問へ挑戦する。", "image": "assets/panels/p006.png", "bubbles": [{"style": "speech", "text": "ゲームみたいで楽しい！", "x": 0.73, "y": 0.24, "max_w": 0.36, "tail": [0.53, 0.56], "font_size": 0.07}]},
+    {"n": 7, "page": 7, "section": "proof", "characters": ["user", "peer"], "art": "丸を箱へ均等に分ける図を見て、ユウが割り算の考え方に気づく。", "image": "assets/panels/p007.png", "bubbles": [{"style": "speech", "text": "分けると解けるんだ", "x": 0.74, "y": 0.24, "max_w": 0.34, "tail": [0.54, 0.55], "font_size": 0.07}]},
+    {"n": 8, "page": 8, "section": "visible_success", "characters": ["user", "decision_maker"], "art": "ユウが答えを書き終え、保護者へ見せる。正解の丸は文字なしの記号で表現。", "image": "assets/panels/p008.png", "bubbles": [{"style": "shout", "text": "自分でできた！", "x": 0.73, "y": 0.24, "max_w": 0.32, "tail": [0.52, 0.58], "font_size": 0.075}]},
+    {"n": 9, "page": 9, "section": "bright_future", "characters": ["user", "peer"], "art": "宿題を片づけたユウとミナが浴衣で花火を見上げる。表情は晴れやか。", "image": "assets/panels/p009.png", "bubbles": [{"style": "speech", "text": "終わったら花火へ行こう", "x": 0.72, "y": 0.24, "max_w": 0.38, "tail": [0.52, 0.56], "font_size": 0.065}]},
+    {"n": 10, "page": 10, "section": "cta", "characters": ["user", "peer", "decision_maker"], "art": "冒頭と同じ机で、ユウが笑顔で教材を開く。三人が次の挑戦を相談している。", "image": "assets/panels/p010.png", "bubbles": [{"style": "speech", "text": "次の挑戦もやってみる", "x": 0.72, "y": 0.24, "max_w": 0.36, "tail": [0.52, 0.56], "font_size": 0.065}]}
+  ],
+  "cta": {"label": "教材を申し込む", "url": "https://example.com/"}
+}

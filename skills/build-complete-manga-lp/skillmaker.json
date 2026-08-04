@@ -1,0 +1,5 @@
+{
+  "e2e": "python3 scripts/self_test.py",
+  "max_mb": 20,
+  "forbid": ["*.key", "*.env", "*_private*"]
+}
