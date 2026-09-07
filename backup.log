@@ -359,3 +359,9 @@ To https://github.com/happyhappylife0307/antigravity-config.git
 Config backed up successfully.
 === Auto Backup Completed ===
 === Auto Backup Started at 2026-09-06 23:45:05 ===
+[main a0629c8] Auto backup config: 2026-09-06 23:45:05
+ 2 files changed, 9 insertions(+)
+fatal: unable to access 'https://github.com/happyhappylife0307/antigravity-config.git/': Could not resolve host: github.com
+Config backed up successfully.
+=== Auto Backup Completed ===
+=== Auto Backup Started at 2026-09-07 23:45:05 ===
